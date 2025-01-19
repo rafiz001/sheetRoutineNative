@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        // Redirect to index.html and preserve the route
+        const redirectToIndex = () => {
+            const pathname = window.location.pathname;
+            const newUrl = window.location.origin + "/sheetRoutineNative/" + '/index.html';
+
+            // Append the original path as a query parameter (optional)
+            //window.location.replace(newUrl + '?redirected=true&path=' + encodeURIComponent(pathname));
+            window.location.replace(newUrl);
+        };
+
+        redirectToIndex();
+    </script>
+</head>
+
+<body>
+    <h1>Redirecting...</h1>
+</body>
+
+</html>

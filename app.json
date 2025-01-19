@@ -1,28 +1,50 @@
 {
   "expo": {
-    "name": "Sheet_Routine",
-    "slug": "Sheet_Routine",
-    "version": "1.0.0",
+    "name": "Sheet Routine",
+    "slug": "sheet-routine",
+    "scheme": "sheet-routine",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#444456"
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "enableHermes": true,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#444456"
+      },
+      "package": "com.rafizuddin.sheetroutine"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "f1bfcaea-b3fa-41a0-a61c-a44bdc5c1b19"
+      }
+    },
+    "owner": "rafiz001",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f1bfcaea-b3fa-41a0-a61c-a44bdc5c1b19"
     }
   }
 }
